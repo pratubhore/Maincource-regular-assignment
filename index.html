@@ -1,81 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-       <title>  css  </title>
-       <link rel="stylesheet" href="index.css"/>
-       
-       <style>
-
-           p{
-               
-                color: rgb(12, 5, 19);
-               
-           }
-           #five {
-                color: chartreuse;
-           }
-
-            .four_class
-            {
-               color: chocolate;
-           }
-           .three_class
-            {
-            color: rgb(0, 139, 19);
-
-           }
-           .three_class_1 {
-               color: darkblue;
-           }
-
-           [attr="first"] {
-               color: darkmagenta;
-           }
-
-
-           #special_button:hover {
-
-            color: rgb(175, 9, 147);
-           }
+    <head>
+     <style>
+         body{
+             background-color: yellowgreen;
+         }
+         
+        .c1{
+            margin: 10% 20% 30% 40%;
            
-           #special_button:active {
-
-           color: rgb(75, 243, 24);
-           }
-
-           p::first-letter{
-               color: crimson;
-           }
-           p::before {
-               content: "~";
-           }
-
-           
-
-          
-
-
-
-        </style>
-
-  </head>
-  <body>
-
-
-  
-       
-       <p attr="first" > India is my country </p>
-       <p attr="second" > India is my country </p>
-       <p class="three_class_1 three_class" > India is my country </p>
-       <p class="four_class" > India is my country </p>
-       <p id="five" > India is my country </p>
-    
-
-
-       <button id="special_button"> load</button>
-
-      
-  </body>
-
-
+         }
+         #triangle1 {
+             height: 0px;
+             width: 0px;
+             border: 100px solid yellowgreen ;
+             border-bottom: 100px solid #e00fac;
+             position: absolute;
+             z-index: 3;
+         }
+         #triangle2{
+             top: 60px;
+             height: 0px;
+             width: 0px;
+             border: 100px solid yellowgreen;
+             border-bottom: 100px solid rgb(44, 15, 173);
+             position: absolute;
+             z-index: 2;
+         }
+         #triangle3 {
+             top: 120px;
+             height: 0px;
+             width: 0px;
+             border: 100px solid yellowgreen;
+             border-bottom: 100px solid rgb(151, 5, 5);
+             position: absolute;
+             z-index: 1;
+         }
+     </style>
+    </head>
+    <body>
+        <div>
+            <div id="triangle1" class="c1"></div>
+            <div id="triangle2" class="c1"></div>
+            <div id="triangle3" class="c1"></div>
+        </div>
+    </body>
 </html>
