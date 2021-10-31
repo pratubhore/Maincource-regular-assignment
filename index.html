@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <title>  css  </title>
+       <link rel="stylesheet" href="index.css"/>
+       
+       <style>
+
+           p{
+               
+                color: rgb(12, 5, 19);
+               
+           }
+           #five {
+                color: chartreuse;
+           }
+
+            .four_class
+            {
+               color: chocolate;
+           }
+           .three_class
+            {
+            color: rgb(0, 139, 19);
+
+           }
+           .three_class_1 {
+               color: darkblue;
+           }
+
+           [attr="first"] {
+               color: darkmagenta;
+           }
+
+
+           #special_button:hover {
+
+            color: rgb(175, 9, 147);
+           }
+           
+           #special_button:active {
+
+           color: rgb(75, 243, 24);
+           }
+
+           p::first-letter{
+               color: crimson;
+           }
+           p::before {
+               content: "~";
+           }
+
+           
+
+          
+
+
+
+        </style>
+
+  </head>
+  <body>
+
+
+  
+       
+       <p attr="first" > India is my country </p>
+       <p attr="second" > India is my country </p>
+       <p class="three_class_1 three_class" > India is my country </p>
+       <p class="four_class" > India is my country </p>
+       <p id="five" > India is my country </p>
+    
+
+
+       <button id="special_button"> load</button>
+
+      
+  </body>
+
+
+</html>
